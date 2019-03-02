@@ -9,7 +9,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @Component
-@ContextConfiguration(classes = WebContext.class)
 public class LittleTestClass {
     @Autowired
     protected WebDriver driver;
