@@ -1,0 +1,20 @@
+package stuff;
+
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+@Component
+@ContextConfiguration(classes = WebContext.class)
+public class LittleTestClass {
+    @Autowired
+    protected WebDriver driver;
+
+    public void justTesting() {
+        driver.manage().window().maximize();
+    }
+}
